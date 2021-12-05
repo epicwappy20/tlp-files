@@ -1,6 +1,8 @@
 FROM debian
 
 # ARCH is only set to avoid repetition in Dockerfile since the binary download only supports amd64
+RUN sudo su
+
 ARG ARCH=amd64
 
 ARG APT_UPDATE=20210112
