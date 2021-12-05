@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM itzg/minecraft-bedrock-server:latest
+FROM ubuntu:latest
 COPY . /app
 RUN make /app
 CMD python /app/app.py
